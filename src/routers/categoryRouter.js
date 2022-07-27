@@ -6,5 +6,5 @@ const categoryValidation = require('../middlewares/categoryValidation');
 const router = Router();
 
 router.post('/', verifyJWT, categoryValidation, categoryController.create);
-
+router.get('/', verifyJWT, categoryController.getCategories);
 module.exports = router;
