@@ -7,5 +7,5 @@ const router = Router();
 
 router.post('/', userValidation, userController.create);
 router.get('/', verifyJWT, userController.getUsers);
-
+router.get('/:id', verifyJWT, userController.getUsersById);
 module.exports = router;
