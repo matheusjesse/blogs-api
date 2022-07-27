@@ -6,7 +6,8 @@ const authSchema = Joi.object({
     }),
     password: Joi.string().required().messages({
         'any.required': 'Some required fields are missing',
-    }),
+    }),             
+    
 });
 
 module.exports = {
